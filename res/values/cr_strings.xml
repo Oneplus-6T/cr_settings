@@ -21,6 +21,8 @@
     <string name="qs_compact_media_player_mode_summary">Enable compact mode for QuickSettings media player</string>
 
     <!-- App Title -->
+    <string name="rising_settings_title">Personalize</string>
+    <string name="rising_settings_summary">Your device, your style</string>
     <string name="crdroid_settings_title">crDroid Settings</string>
     <string name="crdroid_settings_summary">Open goodness</string>
     <string name="reset_settings_title">Reset settings</string>
@@ -66,6 +68,7 @@
     <string name="notification_color">Notification color</string>
     <string name="wallpaper_color">Wallpaper color</string>
     <string name="custom_color">Custom color</string>
+    <string name="reevaluating_theme">Reloading system themes...</string>
 
     <!-- Changelog -->
     <string name="changelog_crdroid_title">Current changelog</string>
