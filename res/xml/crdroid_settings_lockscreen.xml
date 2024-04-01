@@ -123,7 +123,13 @@
             android:summary="@string/lockscreen_doubletap_sleep_summary"
             android:defaultValue="true" />
 
-        <Preference
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="lockscreen_udfps_category"
+        android:title="@string/udfps_settings_title">
+        
+       <Preference
             android:key="udfps_icon_picker"
             android:icon="@drawable/ic_fp_selector"
             android:title="@string/udfps_icon_picker_title"

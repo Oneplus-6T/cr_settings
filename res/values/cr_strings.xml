@@ -1414,4 +1414,7 @@
     <string name="data">Data</string>
     <string name="ringer">Ringer</string>
     <string name="bt">Bluetooth</string>
+    
+     <!-- Fingerprint customizations -->
+    <string name="lockscreen_fp_category_title">Fingerprint customizations</string>
 </resources>
