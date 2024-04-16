@@ -1465,4 +1465,5 @@
     <string name="settings_style_title">Settings Styles</string>
     <string name="settings_style_rising_ui_one">Rising UI 1.0</string>
     <string name="settings_style_rising_ui_two">Rising UI 2.0</string>
+    <string name="settings_style_material">Material</string>
 </resources>
