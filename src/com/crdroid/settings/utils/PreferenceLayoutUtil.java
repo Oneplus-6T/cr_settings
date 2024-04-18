@@ -71,9 +71,11 @@ public class PreferenceLayoutUtil {
         if (EXCLUDE_LIST.contains(key)) {
             return;
         }
-        if ("top_level_wellbeing".equals(key) && Utils.isPackageInstalled(context, PACKAGE_WELLBEING)) {
+        boolean isWellbeingInstalled = Utils.isPackageInstalled(context, PACKAGE_WELLBEING);
+        boolean isGoogleServiceInstalled = Utils.isPackageInstalled(context, PACKAGE_GOOGLE_SERVICES);
+        if ("top_level_wellbeing".equals(key) && isWellbeingInstalled) {
             preference.setLayoutResource(AdaptivePreferenceUtils.getLayoutResourceId(context, "wellbeing", true));
-        } else if ("top_level_google".equals(key) && Utils.isPackageInstalled(context, PACKAGE_GOOGLE_SERVICES)) {
+        } else if ("top_level_google".equals(key) && isGoogleServiceInstalled) {
             preference.setLayoutResource(AdaptivePreferenceUtils.getLayoutResourceId(context, "google", true));
         } else if (topPreferences.contains(key)) {
             preference.setLayoutResource(AdaptivePreferenceUtils.getLayoutResourceId(context, "top", true));
