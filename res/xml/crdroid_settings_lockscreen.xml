@@ -77,6 +77,19 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="lockscreen_category"
+        android:title="@string/lockscreen_category_title">
+
+        <!-- Depth Wallpaper -->
+        <Preference
+            android:key="depth_wallpaper"
+            android:title="@string/dw_wallpaper_enabled_title"
+            android:summary="@string/dw_wallpaper_enabled_summary"
+            android:fragment="com.crdroid.settings.fragments.lockscreen.WallpaperDepth" />
+
+   </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="lockscreen_interface_category"
         android:title="@string/lockscreen_interface_category">
 
