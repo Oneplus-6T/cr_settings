@@ -132,7 +132,6 @@ public class crDroidSettingsLayout extends SettingsPreferenceFragment {
         @Override
         protected Void doInBackground(Void... params) {
             Buttons.reset(rContext);
-            LockScreen.reset(rContext);
             Miscellaneous.reset(rContext);
             Navigation.reset(rContext);
             Notifications.reset(rContext);
