@@ -24,6 +24,9 @@
     <string name="qs_compact_media_player_mode_title">Compact QS Media player</string>
     <string name="qs_compact_media_player_mode_summary">Enable compact mode for QuickSettings media player</string>
 
+    <!-- Apply Button --> 
+    <string name="apply_change_button_title">Apply</string>
+
     <!-- App Title -->
     <string name="crdroid_settings_title">crDroid Settings</string>
     <string name="crdroid_settings_summary">Open goodness</string>
