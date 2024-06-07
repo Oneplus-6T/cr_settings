@@ -56,8 +56,7 @@ public class PreferenceLayoutUtil {
             "top_level_sound",
             "top_level_wallpaper",
             "top_level_location",
-            "top_level_accounts",
-            "top_level_about_device"
+            "top_level_system"
     ));
     
     private static final Set<String> EXCLUDE_LIST = new HashSet<>(Arrays.asList(
@@ -83,12 +82,19 @@ public class PreferenceLayoutUtil {
             preference.setLayoutResource(AdaptivePreferenceUtils.getLayoutResourceId(context, "middle", true));
         } else if (bottomPreferences.contains(key)) {
             preference.setLayoutResource(AdaptivePreferenceUtils.getLayoutResourceId(context, "bottom", true));
+        } else if (key.equals("top_level_about_device")) {
+            preference.setLayoutResource(R.layout.top_level_preference_about);
         } else {
             // highlight injected top level preference e.g OEM parts
             int order = extraPreferenceOrder - 1;
             updateStartOrder(order);
             preference.setOrder(order);
             preference.setLayoutResource(AdaptivePreferenceUtils.getLayoutResourceId(context, "solo", true));
+        }
+        if (key.equals("top_level_display")) {
+            preference.setOrder(-150);
+        } else if (key.equals("top_level_wallpaper")) {
+            preference.setOrder(-140);
         }
     }
 }
