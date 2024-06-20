@@ -20,23 +20,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:lineage="http://schemas.android.com/apk/res-auto">
     
-    <PreferenceCategory
-        android:key="lockscreen_clock_category"
-        android:title="@string/lockscreen_clock_category_title">
+     <PreferenceCategory
+        android:title="Custom Clock Styles">
 
-         <Preference
-            android:key="lockscreen_preview"
-            settings:layout="@layout/lockscreen_preview" />
-
-        <!-- Custom Clock Style -->
-        <com.crdroid.settings.preferences.SystemSettingListPreference
-            android:entries="@array/clock_style_entries"
+        <!-- Lockscreen Clock -->
+        <Preference
+            android:key="android.theme.customization.lockscreen_clock_font"
             android:icon="@drawable/ic_clock"
-            android:title="@string/custom_clock_style"
-            android:key="clock_style"
-            android:defaultValue="0"
-            android:entryValues="@array/clock_style_values" />
-
+            android:title="@string/lockscreen_clock_category_title"
+            android:summary="@string/lockscreen_clock_category_summary"
+            android:fragment="com.crdroid.settings.fragments.LockScreenClock" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -45,6 +38,7 @@
 
         <Preference
             android:key="depth_wallpaper"
+            android:icon="@drawable/ic_themes"
             android:title="@string/dw_wallpaper_enabled_title"
             android:summary="@string/dw_wallpaper_enabled_summary"
             android:fragment="com.crdroid.settings.fragments.WallpaperDepth" />

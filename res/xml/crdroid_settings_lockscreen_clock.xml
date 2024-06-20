@@ -23,6 +23,10 @@
         android:key="lockscreen_clock_category"
         android:title="@string/lockscreen_clock_category_title">
 
+       <Preference
+            android:key="lockscreen_preview"
+            settings:layout="@layout/lockscreen_preview" />
+
         <com.crdroid.settings.preferences.SystemSettingListPreference
             android:entries="@array/clock_style_entries"
             android:icon="@drawable/ic_clock"
@@ -30,17 +34,14 @@
             android:key="clock_style"
             android:defaultValue="0"
             android:summary="%s"
-            android:entryValues="@array/clock_style_values"
-            lineage:position="solo" />
+            android:entryValues="@array/clock_style_values" />
 
-        <!-- Lockscreen Clock Font style -->
-        <com.android.settings.preferences.ui.AdaptivePreference
+        <Preference
             android:key="android.theme.customization.lockscreen_clock_font"
             android:icon="@drawable/ic_font"
             android:title="@string/theme_customization_lock_clock_title"
             android:summary="@string/theme_customization_lock_clock_summary"
-            android:fragment="com.crdroid.settings.fragments.lockscreen.LockClockFontsPicker"
-            lineage:position="solo"/>
+            android:fragment="com.crdroid.settings.fragments.lockscreen.LockClockFontsPicker"/>
 
     </PreferenceCategory>
 
@@ -52,15 +53,13 @@
             android:key="lockscreen_widgets_enabled"
             android:title="@string/lockscreen_widgets_enabled_title"
             android:summary="@string/lockscreen_widgets_enabled_summary"
-            android:defaultValue="false"
-            lineage:position="solo" />
+            android:defaultValue="false" />
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_display_widgets"
             android:title="@string/lockscreen_display_widgets_title"
             android:summary="@string/lockscreen_display_widgets_summary"
-            android:defaultValue="false"
-            lineage:position="solo" />
+            android:defaultValue="false" />
 
         <com.crdroid.settings.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
@@ -68,8 +67,7 @@
             android:title="@string/main_custom_widgets1"
             android:key="main_custom_widgets1"
             android:entryValues="@array/widget_values" 
-            android:summary="%s"
-            lineage:position="top" />
+            android:summary="%s" />
 
         <com.crdroid.settings.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
@@ -77,8 +75,7 @@
             android:title="@string/main_custom_widgets2"
             android:key="main_custom_widgets2"
             android:entryValues="@array/widget_values"
-            android:summary="%s"
-            lineage:position="bottom" />
+            android:summary="%s" />
 
         <com.crdroid.settings.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
@@ -86,8 +83,7 @@
             android:title="@string/custom_widgets1"
             android:key="custom_widgets1"
             android:entryValues="@array/widget_values" 
-            android:summary="%s"
-            lineage:position="top" />
+            android:summary="%s" />
 
         <com.crdroid.settings.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
@@ -95,8 +91,7 @@
             android:title="@string/custom_widgets2"
             android:key="custom_widgets2"
             android:entryValues="@array/widget_values"
-            android:summary="%s" 
-            lineage:position="middle" />
+            android:summary="%s"  />
 
         <com.crdroid.settings.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
@@ -104,8 +99,7 @@
             android:title="@string/custom_widgets3"
             android:key="custom_widgets3"
             android:entryValues="@array/widget_values" 
-            android:summary="%s"
-            lineage:position="middle" />
+            android:summary="%s" />
 
         <com.crdroid.settings.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
@@ -113,8 +107,7 @@
             android:title="@string/custom_widgets4"
             android:key="custom_widgets4"
             android:entryValues="@array/widget_values" 
-            android:summary="%s"
-            lineage:position="bottom" />
+            android:summary="%s" />
 
         <com.android.settingslib.widget.LayoutPreference
             android:key="apply_change_button"
