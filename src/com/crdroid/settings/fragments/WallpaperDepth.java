@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings.lineage.fragments;
+package com.crdroid.settings.fragments;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -59,15 +59,15 @@ public class WallpaperDepth extends SettingsPreferenceFragment
             implements Preference.OnPreferenceChangeListener  {
 
     public static final String TAG = "WallpaperDepth";
-
+    
     private Preference mDepthWallpaperCustomImagePicker;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.settings_wallpaper_depth);
-
+        addPreferencesFromResource(R.xml.crdroid_settings_wallpaper_depth);
+        
         mDepthWallpaperCustomImagePicker = findPreference("depth_wallpaper_subject_image_uri");
     }
 
@@ -78,7 +78,7 @@ public class WallpaperDepth extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.LINEAGE_SETTINGS;
+        return MetricsProto.MetricsEvent.CRDROID_SETTINGS;
     }
 
 
@@ -153,7 +153,7 @@ public class WallpaperDepth extends SettingsPreferenceFragment
      * For search
      */
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.settings_wallpaper_depth) {
+            new BaseSearchIndexProvider(R.xml.crdroid_settings_wallpaper_depth) {
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {

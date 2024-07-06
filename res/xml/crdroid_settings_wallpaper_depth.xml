@@ -20,20 +20,21 @@
     xmlns:lineage="http://schemas.android.com/apk/res-auto"
     android:title="@string/dw_wallpaper_enabled_title">
 
-    <com.lineage.support.preferences.SystemSettingSwitchPreference
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="depth_wallpaper_enabled"
         android:title="@string/dw_wallpaper_enabled_title"
         android:summary="@string/dw_wallpaper_enabled_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false"
+        lineage:position="top" />
 
-    <Preference
+    <com.android.settings.preferences.ui.AdaptivePreference
         android:key="depth_wallpaper_subject_image_uri"
         android:dependency="depth_wallpaper_enabled"
         android:title="@string/dw_file_header_select_title"
         android:summary="@string/dw_file_header_select_summary"
         android:persistent="false" />
 
-    <com.lineage.support.preferences.SystemSettingSeekBarPreference
+    <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
         android:key="depth_wallpaper_opacity"
         android:title="@string/dw_wallpaper_opacity_title"
         android:max="100"
@@ -41,8 +42,8 @@
         settings:interval="1"
         settings:units="%"
         android:defaultValue="100" />
-        
-    <com.lineage.support.preferences.SystemSettingSeekBarPreference
+
+    <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
         android:key="depth_wallpaper_offset_x"
         android:title="@string/depth_wallpaper_offset_x_title"
         android:max="100"
@@ -50,16 +51,17 @@
         settings:interval="1"
         settings:units="%"
         android:defaultValue="-16" />
-        
-    <com.lineage.support.preferences.SystemSettingSeekBarPreference
+
+    <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
         android:key="depth_wallpaper_offset_y"
         android:title="@string/depth_wallpaper_offset_y_title"
         android:max="100"
         settings:min="-100"
         settings:interval="1"
         settings:units="%"
-        android:defaultValue="-16" />
-        
+        android:defaultValue="-16"
+        lineage:position="bottom" />
+
     <com.android.settingslib.widget.FooterPreference
         android:key="dw_footer"
         android:title="@string/dw_footer_text"
