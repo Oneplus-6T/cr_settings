@@ -42,8 +42,6 @@ import com.crdroid.settings.preferences.CustomSeekBarPreference;
 
 import lineageos.providers.LineageSettings;
 
-import com.android.internal.util.rising.SystemRestartUtils;
-
 import java.util.List;
 import java.util.ArrayList;
 
@@ -161,7 +159,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             checkQSOverlays(getActivity());
             return true;
         } else if (preference == mQsCompactPlayer) {
-            SystemRestartUtils.showSystemUIRestartDialog(getActivity());
             return true;
         }
         return false;
