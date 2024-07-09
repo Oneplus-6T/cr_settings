@@ -28,7 +28,8 @@
             android:icon="@drawable/ic_dashboard_notifications"
             android:title="@string/notifications_title"
             android:summary="@string/notif_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.Notifications" />
+            android:fragment="com.crdroid.settings.fragments.Notifications"
+            app:position="top" />
 
         <!-- Sound -->
         <com.android.settings.preferences.ui.AdaptivePreference

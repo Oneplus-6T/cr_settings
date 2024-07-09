@@ -63,7 +63,8 @@
             android:icon="@drawable/ic_navigation"
             android:title="@string/nav_settings_title"
             android:summary="@string/nav_settings_summary"
-            android:fragment="com.crdroid.settings.fragments.Navigation" />
+            android:fragment="com.crdroid.settings.fragments.Navigation"
+            app:position="bottom" />
 
     </PreferenceCategory>
 
@@ -105,7 +106,20 @@
             android:title="@string/three_finger_gesture"
             android:summary="@string/three_finger_gesture_summary"
             android:defaultValue="false" />
-            
+
+        <!-- Unlock FPS for specific games -->
+        <com.crdroid.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pixelprops.games"
+            android:title="@string/use_games_spoof_title"
+            android:summary="@string/use_games_spoof_summary" />
+
+        <!-- Unlimited google photos storage -->
+        <com.crdroid.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pixelprops.gphotos"
+            android:title="@string/use_photos_spoof_title"
+            android:summary="@string/use_photos_spoof_summary"
+            android:defaultValue="true" />
+
         <!-- Sensor block per package -->
         <com.android.settings.preferences.ui.AdaptivePreference
             android:key="sensor_block_settings"
@@ -120,19 +134,6 @@
             android:summary="@string/smart_pixels_summary" 
             android:fragment="com.crdroid.settings.fragments.ui.SmartPixels"
             app:position="bottom" />
-
-        <!-- Unlock FPS for specific games -->
-        <com.crdroid.settings.preferences.SystemPropertySwitchPreference
-            android:key="persist.sys.pixelprops.games"
-            android:title="@string/use_games_spoof_title"
-            android:summary="@string/use_games_spoof_summary" />
-
-        <!-- Unlimited google photos storage -->
-        <com.crdroid.settings.preferences.SystemPropertySwitchPreference
-            android:key="persist.sys.pixelprops.gphotos"
-            android:title="@string/use_photos_spoof_title"
-            android:summary="@string/use_photos_spoof_summary"
-            android:defaultValue="true" />
 
     </PreferenceCategory>
 
