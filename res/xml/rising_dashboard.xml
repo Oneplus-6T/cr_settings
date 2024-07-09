@@ -15,7 +15,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:title="@string/crDroid_settings_title" >
+    android:title="@string/rising_settings_title" >
 
         <!-- Quick Access (Lockscreen, Themes and Toolbox)-->
         <com.android.settingslib.widget.LayoutPreference
