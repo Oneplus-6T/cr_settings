@@ -34,7 +34,6 @@ public class PreferenceLayoutUtil {
 
     private static final Set<String> topPreferences = new HashSet<>(Arrays.asList(
             "top_level_network",
-            "top_level_system",
             "top_level_apps",
             "top_level_accessibility",
             "top_level_emergency",
@@ -48,17 +47,17 @@ public class PreferenceLayoutUtil {
             "top_level_storage",
             "top_level_notifications",
             "top_level_communal",
-            "top_level_safety_center"
+            "top_level_safety_center",
+            "top_level_accounts"
     ));
 
     private static final Set<String> bottomPreferences = new HashSet<>(Arrays.asList(
-            "top_level_connected_devices",
             "top_level_sound",
             "top_level_wallpaper",
             "top_level_location",
             "top_level_system"
     ));
-    
+
     private static final Set<String> EXCLUDE_LIST = new HashSet<>(Arrays.asList(
             "top_level_crdroid"
     ));

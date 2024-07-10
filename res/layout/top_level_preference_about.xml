@@ -31,17 +31,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="wrap_content"
-                android:layout_height="24dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="-18dp"
-                android:tint="#FFFFFF"
-                android:src="@drawable/crdroid" />
-
             <TextView
                 android:id="@android:id/summary"
                 android:layout_width="wrap_content"
