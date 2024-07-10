@@ -41,12 +41,12 @@
 
 
     <!-- App Title -->
-    <string name="personalize_highlight_settings_title">Personalize your device</string>
+    <string name="personalize_highlight_settings_title">Highlight your device</string>
     <string name="network_highlight_settings_summary">Setup network and internet connection</string>
     <string name="bt_highlight_settings_title">Setup connected devices</string>
     <string name="bt_highlight_settings_summary">Add, pair bluetooth, and configure device connections</string>
-    <string name="rising_settings_title">Personalize</string>
-    <string name="rising_settings_summary">Change icons, themes, and more</string>
+    <string name="rising_settings_title">crDroid Settings</string>
+    <string name="rising_settings_summary">Open goodness</string>
     <string name="crdroid_settings_title">crDroid Settings</string>
     <string name="crdroid_settings_summary">Open goodness</string>
     <string name="reset_settings_title">Reset settings</string>
@@ -77,9 +77,8 @@
     <string name="build_is_community_title">#Community</string>
     <string name="maintainer_summary">%s</string>
     <string name="unknown_maintainer">unknown</string>
-    <string name="device_info_platform_version">14 | fourteen | UpsideDownCake</string>
+    <string name="device_info_platform_version">14</string>
     <string name="about_rising_device">crDroid Device</string>
-    <string name="device_header_info_category_title">Build type</string>
     <string name="device_info_hw_sw_more">More</string>
     <string name="device_info_security_patch">Security update</string>
     <string name="edit_device_name_title">Edit Device Name</string>
